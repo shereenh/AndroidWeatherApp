@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity A"
+            android:textSize="32dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/changeAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity B"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recycler"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/obs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observer"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service call"
+                android:textSize="10sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/frag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment 1"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/frag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment 2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Following is a fragment container..."/>
+
+
+        <FrameLayout
+            android:id="@+id/fragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

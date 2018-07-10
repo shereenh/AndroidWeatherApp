@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceActivity">
+
+    <LinearLayout
+        android:id="@+id/topLin"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_name"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:hint="Enter a city"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="6dp" />
+
+
+        <ImageButton
+            android:id="@+id/getWeather"
+            android:src="@drawable/gray_plus"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/darkGray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/topLin"
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/wicon"
+        android:src="@drawable/sun"
+        android:scaleType="centerInside"
+        android:layout_width="0sp"
+        android:layout_weight="1.5"
+        android:background="@color/skyBlue"
+        android:layout_height="70dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="X F" />
+
+        <TextView
+            android:id="@+id/mainW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/humdidty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="hum: xx" />
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="pres: xx" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="wind: xx" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:text="City" />
+
+        <TextView
+            android:id="@+id/Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Country" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

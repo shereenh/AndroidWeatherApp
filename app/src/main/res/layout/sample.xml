@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_name"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:hint="Enter a city"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="6dp" />
+
+
+        <ImageButton
+            android:id="@+id/getWeather"
+            android:src="@drawable/gray_plus"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/darkGray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/linear1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pretty?"/>
+
+    <TextView
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"/>
+
+</RelativeLayout>
